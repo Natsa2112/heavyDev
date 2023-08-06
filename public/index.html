@@ -1,11 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="img/el-rock-and-roll.png" type="icon"> <!--agrega el Favicom bajar la imagen antes de hacer el link-->
+    <!--metas obligatorios-->
+    <meta name="author" content="Claudio Villafañe" /> <!--Nombre del autor-->
+    <meta name="description" content="App de heavyMetal"/> <!--descripcion de la web-->
+    <meta name="copyright" content="NatsaDev copyright 2023/"> <!--copyright-->
+    <!-- Agrega las hojas de estilo de Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Agrega los archivos de JavaScript de Bootstrap (asegúrate de incluir jQuery primero) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!--bootstap 5.3.1-->
+    <title>HeavyDev Page</title> <!--titulo de la pestaña-->
+    <link rel="stylesheet" href="css/style.css"> <!-- linkear el archivo del css se llama style.css-->
+    <!--metas generados(OP)-->
 </head>
 <body>
-    
+    <header>
+        
+        <nav>
+            <a href=""><img src="img/Natsav Logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#yo">Quien Soy?</a></li>
+                <li><a href="#trab">Trabajos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <section class="splash"> <!--creamos la seccion con la clase splash para despues agregarle imagen a traves de .css-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="texto">
+                    <div class="col-12">
+                        <h1>Trabajos y proyectos</h1>
+                        <br>
+                        <h1>Realizados por mi.</h1>
+                        <br>
+                        <button type="button" class="btn btn-outline-danger">No Tocar</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+    </section>
+    <section class="descrpcion espacios">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 centrado"> <!--aca se agrega la herramienta de centrado-->
+                    <h1 id="yo">Quien Soy?</h1>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 centrado"><p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorem ea neque suscipit doloribus eaque incidunt molestias cupiditate autem vitae sequi quae labore rerum, doloremque sint nesciunt aut voluptas veritatis.</p></p>
+                </div>
+            </div>
+            <div class="row espacios">
+                <div class="col-md-3">
+                    <div id="trab" class="card espacioSup">
+                        <div class="pic"> <!--para colocar una imagen en la card se usa .pic es de bt-->
+                            <img src="img/Captura.PNG" class="img-fluid" alt=""> <!--se le agrega la clase img-fluid para que se ajuste a la card funcion de bt-->
+                            <div class="card-contenido">
+                                <h3>Links Tree</h3>
+                                <p>Primer Reto, armar una app con foto, descripcion y links de mis redes. Tambien se aplicaron metas de cambios de fuentes, metas de OG y Esquemas.</p>
+                                <h5>Lenguajes</h5>
+                                <ul>
+                                    <div class="li"><img src="https://icongr.am/devicon/html5-original-wordmark.svg?size=29&color=currentColor" alt="">HTML</div>
+                                    <div class="li"><img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=28&color=currentColor" alt="">CSS</div>
+                                </ul>
+                                <hr>
+                                <div class="visitar">                                
+                                    <a href="https://retolinktree001.web.app/" target="_blank" class="btn btn-danger">Visitar</a> <!--se usa <a> para poder ir al link donde es la card-->
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card espacioSup">
+                        <div class="pic"> <!--para colocar una imagen en la card se usa .pic es de bt-->
+                            <img src="img/coming_soon.avif" class="img-fluid" alt=""> <!--se le agrega la clase img-fluid para que se ajuste a la card funcion de bt-->
+                            <div class="card-contenido"><h3>Tree Links</h3>
+                                <p>Primer Reto, armar una app con foto, descripcion y links de mis redes. Tambien se aplicaron metas de cambios de fuentes, metas de OG y Esquemas.</p>
+                                <h5>Lenguajes</h5>
+                                <ul>
+                                    <div class="li"><img src="" alt="">HTML</div>
+                                    <div class="li"><img src="" alt="">CSS</div>
+                                </ul>
+                                <hr>
+                                <div class="visitar">                                
+                                    <a href="" class="btn btn-danger">Visitar</a> <!--se usa <a> para poder ir al link donde es la card-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card espacioSup">
+                        <div class="pic"> <!--para colocar una imagen en la card se usa .pic es de bt-->
+                            <img src="img/coming_soon.avif" class="img-fluid" alt=""> <!--se le agrega la clase img-fluid para que se ajuste a la card funcion de bt-->
+                            <div class="card-contenido">
+                                <h3>Tree Links</h3>
+                                <p>Primer Reto, armar una app con foto, descripcion y links de mis redes. Tambien se aplicaron metas de cambios de fuentes, metas de OG y Esquemas.</p>
+                                <h5>Lenguajes</h5>
+                                <ul>
+                                    <div class="li"><img src="" alt="">HTML</div>
+                                    <div class="li"><img src="" alt="">CSS</div>
+                                </ul>
+                                <hr>
+                                <div class="visitar">                                
+                                    <a href="" class="btn btn-danger">Visitar</a> <!--se usa <a> para poder ir al link donde es la card-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card espacioSup">
+                        <div class="pic"> <!--para colocar una imagen en la card se usa .pic es de bt-->
+                            <img src="img/coming_soon.avif" class="img-fluid" alt=""> <!--se le agrega la clase img-fluid para que se ajuste a la card funcion de bt-->
+                            <div class="card-contenido">
+                                <h3>Tree Links</h3>
+                                <p>Primer Reto, armar una app con foto, descripcion y links de mis redes. Tambien se aplicaron metas de cambios de fuentes, metas de OG y Esquemas.</p>
+                                <h5>Lenguajes</h5>
+                                <ul>
+                                    <div class="li"><img src="" alt="">HTML</div>
+                                    <div class="li"><img src="" alt="">CSS</div>
+                                </ul>
+                                <hr>
+                                <div class="visitar">                                
+                                    <a href="" class="btn btn-danger">Visitar</a> <!--se usa <a> para poder ir al link donde es la card-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section id="frase">
+        <div class="container espacios">
+            <div class="row centrado">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2><img src="https://icongr.am/fontawesome/quote-left.svg?size=30&color=8C2B2B" alt=""> La felicidad es cuando lo que piensas, lo que dices y lo que haces están en armonía. <img src="https://icongr.am/fontawesome/quote-right.svg?size=30&color=8C2B2B" alt=""></h2>
+                    <span class="qautor">#MahatmaGandhi</span>
+                    <br><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid alias sit nihil minima porro voluptatibus quisquam, eos voluptatem voluptate qui autem expedita quam eius! Cupiditate voluptate officiis ratione mollitia cum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row espacios centrado card-contenido">
+            <div class="col-md-4">
+                <img src="https://icongr.am/fontawesome/bullhorn.svg?size=90&color=8C2B2B" alt="">
+                <h2>Titulo 01</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptates ipsa voluptatibus odio provident pariatur ad error cupiditate praesentium. Corrupti, expedita. Illum aspernatur nobis at distinctio unde nulla debitis eaque.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://icongr.am/fontawesome/child.svg?size=90&color=8C2B2B" alt="">
+                <h2>Titulo 02</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptates ipsa voluptatibus odio provident pariatur ad error cupiditate praesentium. Corrupti, expedita. Illum aspernatur nobis at distinctio unde nulla debitis eaque.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://icongr.am/fontawesome/heart.svg?size=90&color=8C2B2B" alt="">
+                <h2>Titulo 03</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptates ipsa voluptatibus odio provident pariatur ad error cupiditate praesentium. Corrupti, expedita. Illum aspernatur nobis at distinctio unde nulla debitis eaque.</p>
+            </div>
+        </div>
+    </section>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/personal-computer-computer-computer-keyboard-peripheral-desk-space-bar-2079639-wallhere.com.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/mechanical-keyboard-desk-deskmat-keyboards-computer-mice-2096987-wallhere.com.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/computer-information-technology-2250792-wallhere.com.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section>
+        <div class="container espacios">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 id="contacto">Contactanos</h3>
+                    <p>Si tienes dudas o consultas, no dudes en contactarnos.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Ingresa tu correo</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tunombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        copyright
+    </footer>
+    <!--<script>
+        $(document).ready(function() {
+            // Inicializar el carrusel
+            $('#carouselExampleIndicators').carousel();
+        });
+    </script>
+-->
 </body>
 </html>
